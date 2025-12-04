@@ -30,7 +30,7 @@ body {
   margin-top: 16px;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-weight: 700;
   color: #e5e7eb;
 }
@@ -48,6 +48,12 @@ h2 {
 h3 {
   font-size: 1rem;
   margin-bottom: 4px;
+}
+
+h4 {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  color: #a5b4fc;
 }
 
 .subtitle {
@@ -308,8 +314,109 @@ input[type="range"]::-moz-range-thumb {
   font-weight: 600;
 }
 
-/* Small tweaks for very small screens */
+/* New Economic Analysis Styles */
+.analysis-section {
+  background: rgba(15, 23, 42, 0.5);
+  border-radius: 12px;
+  padding: 12px;
+  margin: 12px 0;
+  border-left: 4px solid #3b82f6;
+}
 
+.analysis-section h4 {
+  color: #a5b4fc;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.analysis-section ul {
+  margin-left: 16px;
+  margin-bottom: 8px;
+}
+
+.analysis-section li {
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+  color: #d1d5db;
+}
+
+.warning {
+  color: #f87171;
+  background: rgba(248, 113, 113, 0.1);
+  padding: 8px;
+  border-radius: 8px;
+  margin: 8px 0;
+  font-size: 0.85rem;
+}
+
+.success {
+  color: #34d399;
+  background: rgba(52, 211, 153, 0.1);
+  padding: 8px;
+  border-radius: 8px;
+  margin: 8px 0;
+  font-size: 0.85rem;
+}
+
+.insight {
+  font-style: italic;
+  color: #9ca3af;
+  font-size: 0.85rem;
+  padding: 8px;
+  border-left: 3px solid #8b5cf6;
+  margin: 8px 0;
+}
+
+.economic-metrics {
+  background: rgba(30, 64, 175, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.metric-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 0;
+  font-size: 0.85rem;
+}
+
+.metric-label {
+  color: #9ca3af;
+}
+
+.metric-value {
+  color: #e5e7eb;
+  font-weight: 600;
+}
+
+.metric-good {
+  color: #34d399;
+}
+
+.metric-warning {
+  color: #f59e0b;
+}
+
+.metric-bad {
+  color: #f87171;
+}
+
+.diversification-chart {
+  display: flex;
+  height: 20px;
+  margin: 10px 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(30, 64, 175, 0.2);
+}
+
+.diversification-segment {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+/* Small tweaks for very small screens */
 @media (max-width: 360px) {
   .card {
     padding: 16px 12px 12px;
